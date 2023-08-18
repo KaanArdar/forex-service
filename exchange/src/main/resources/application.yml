@@ -1,0 +1,19 @@
+server:
+  name: exchange-service
+  port: 9001
+spring:
+  datasource:
+    url: jdbc:h2:mem:exchange_transaction
+    driverClassName: org.h2.Driver
+  jpa:
+  database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+
+fast-forex:
+  url: https://api.fastforex.io
+  apiKey: d1565c4848-6662857d7c-rzfpvh
+
+http:
+  max-total-connections: 20
+  read-time-out: 5000
+  connect-timeout: 5000
+  keep-alive-duration: 5000
